@@ -1,0 +1,76 @@
+q1 from slowest to fastest
+1. 1/n
+2. 12
+3. log(n)
+4. 2^log(n)
+5. nlog(n)
+6. n*sqrt(n)
+7. n^2
+8. n^3
+9. n!
+10. e^n
+
+q2
+0  1  2  3  4  5  6  7  8  9
+Open Hash:
+90    82 53       26 87    69
+50    62                   99
+                           79
+Closed Hash:
+90 50 82 53 99 62 26 87 79 69
+
+q3
+array would be better than a linked list when
+(1) for singly-linked bois, getting the previous element is harder than for arrays
+(2) getting the last element is easier for arrays
+linked list would be better than an array when
+(1) inserting an element in the middle is wayyy easier
+(2) same with inserting an element at the beginning
+linked lists and arrays behave with similar complexity when accessing the first element
+
+q4
+because were searching a sorted list of hypothetical tests, we can use binary search
+i hope having an optional argument is ok... I really like recursion
+func findFloor(numFloors, bottomFloor = 1):
+	if numFloors == bottomFloor:
+		return bottomFloor
+	middle = (numFloors - bottomFloor) // 2
+	if testFloor(middle):
+		return findFloor(middle)
+	else
+		return findFloor(numFloors, middle)
+		
+q5
+my goal is to use a given nut to partition the bolts
+then we use a bolt at the partition to partition the nuts
+now we have the lists partitioned and we can recursively sort the partitions
+def sortNB(Nuts, Bolts):
+	if len(Nuts) == 0:
+		exit
+	else:
+		n = 0
+		partition bolts based on Nuts[n] using the lorenzo partition (i forget the name)
+		b = index where comparison returns 0
+		partition nuts based on Botls[b] using the partition algorithm i forget the name of
+		sortNB(Nuts[0:b], Bolts[0:b])
+		sortNB(Nuts[b+1:-1], Bolts[b+1:1])
+sorry about not having actual psuedocode i ran out of time
+
+q6
+def reverseStack(S, Q):
+	while not S.isempty():
+		Q.enqueue(S.pop())
+	while not Q.isempty():
+		S.push(Q.dequeue())
+
+q8
+def srt(L):
+	if len(L) == 1:
+		return L
+	else:
+		new = srt(L[0:len(L)-2])
+		for i in range(len(new)):
+			if L[-1] < new[i]:
+				new[0:i-1].append(L[-1])
+				new.extend(new[i:])
+				return new

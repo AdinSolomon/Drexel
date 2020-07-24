@@ -1,0 +1,13 @@
+def srt(L):
+	if len(L) == 1:
+		return L
+	else:
+		new = srt(L[0:len(L)-2])
+		for i in range(len(new)):
+			if L[-1] < new[i]:
+				new[0:i-1].append(L[-1])
+				new.extend(new[i:])
+				return new
+
+if __name__ == "__main__":
+	print(srt([9,4,5,6,2,7,1,0]))
