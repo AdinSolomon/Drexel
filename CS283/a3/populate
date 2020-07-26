@@ -1,0 +1,9 @@
+#!/bin/bash
+
+[ -f ccomp.db ] && rm ccomp.db
+touch ccomp.db
+./ccadd 10 Me Me 2020 cpu test1
+./ccadd 5 you you 900 cpu testyboi
+./ccadd 6 lenovo laptop 1500 intel? ...
+./ccadd 8 uhhhh uhh 2020 uhh uhhhhhhh
+

@@ -1,0 +1,17 @@
+#!/bin/bash
+declare -a c_files=("ccadd"
+	"ccitem"
+	"cclist"
+	"ccdel"
+	"ccmatch"
+	"ccyear"
+	"ccedit"
+	)
+
+for file in ${c_files[@]}; do
+	if [ -f ${file}.c ]; then
+		echo "compiling $file"
+		gcc -o $file ${file}.c 2>/dev/null || echo -e "\tfailed"
+	fi
+done
+echo done
