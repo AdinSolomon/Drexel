@@ -95,7 +95,7 @@ class AVL:
 			return self.rightRotate(node)
 		elif balance < -1 and value > node.getRight().getValue():
 			return self.leftRotate(node)
-		elif balance < -1 and value > node.getRight().getValue():
+		elif balance < -1 and value < node.getRight().getValue():
 			node.setRight(self.rightRotate(node.getRight()))
 			return self.leftRotate(node)
 		return node
@@ -104,19 +104,12 @@ class AVL:
 		#Implement me
 		if mynode == None:
 			return node(value)
+		elif value == mynode.getValue():
+			return mynode
+		elif value < mynode.getValue():
+			mynode.setLeft(self.insert_value(value, mynode.getLeft()))
 		else:
-			if value == mynode.getValue():
-				return mynode
-			if value < mynode.getValue():
-				if mynode.getLeft() == None:
-					mynode.setLeft(node(value))
-				else:
-					self.insert_value(value, mynode.getLeft())
-			else:
-				if mynode.getRight() == None:
-					mynode.setRight(node(value))
-				else:
-					self.insert_value(value, mynode.getRight())
+			mynode.setRight(self.insert_value(value, mynode.getRight()))
 		self.updateHeight(mynode)
 		mynode = self.rebalance(mynode, value)
 		return mynode
@@ -219,10 +212,11 @@ if __name__=="__main__":
 	t = AVL()
 	print(t.getRoot())
 	t.insert
-	to_insert=[6,4,1,10,8,5,12]
+	to_insert=[5,3,4,2,7,9,6]
 	print("A simple set of BST Examples.")
 	my_tree = AVL()
 	for x in to_insert:
+		print("inserting", x)
 		my_tree.insert(x)
 		print("Tree After Insert "+str(x))
 		print("Inorder:")
