@@ -1,0 +1,8 @@
+Option 1: split fgets (line terminated by \n\0)
+- a list of argv arrays to put argv arrays into
+- for each split by ';'
+	- 
+
+Option 2: iterate over fgets line
+- iterate from the beginning of buf to the first space or cmd terminating char
+	- flag starts at set
