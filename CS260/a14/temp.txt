@@ -1,0 +1,1553 @@
+[3, 15, 10, 6, 11, 7, 9, 12, 17, 14, 4, 19, 18, 2, 5, 20, 1, 13, 8, 16]
+Heap Current Size: 20
+Heap Max Size: 25
+Contents:
+H[0]=1
+H[1]=2
+H[2]=3
+H[3]=4
+H[4]=6
+H[5]=10
+H[6]=5
+H[7]=12
+H[8]=8
+H[9]=14
+H[10]=11
+H[11]=19
+H[12]=18
+H[13]=9
+H[14]=7
+H[15]=20
+H[16]=15
+H[17]=17
+H[18]=13
+H[19]=16
+
+
+downheaping on 0
+Heap Current Size: 19
+Heap Max Size: 25
+Contents:
+H[0]=16
+H[1]=2
+H[2]=3
+H[3]=4
+H[4]=6
+H[5]=10
+H[6]=5
+H[7]=12
+H[8]=8
+H[9]=14
+H[10]=11
+H[11]=19
+H[12]=18
+H[13]=9
+H[14]=7
+H[15]=20
+H[16]=15
+H[17]=17
+H[18]=13
+
+
+	l_exists = True = 2
+	r_exists = True = 3
+downheaping on 1
+Heap Current Size: 19
+Heap Max Size: 25
+Contents:
+H[0]=2
+H[1]=16
+H[2]=3
+H[3]=4
+H[4]=6
+H[5]=10
+H[6]=5
+H[7]=12
+H[8]=8
+H[9]=14
+H[10]=11
+H[11]=19
+H[12]=18
+H[13]=9
+H[14]=7
+H[15]=20
+H[16]=15
+H[17]=17
+H[18]=13
+
+
+	l_exists = True = 4
+	r_exists = True = 6
+downheaping on 3
+Heap Current Size: 19
+Heap Max Size: 25
+Contents:
+H[0]=2
+H[1]=4
+H[2]=3
+H[3]=16
+H[4]=6
+H[5]=10
+H[6]=5
+H[7]=12
+H[8]=8
+H[9]=14
+H[10]=11
+H[11]=19
+H[12]=18
+H[13]=9
+H[14]=7
+H[15]=20
+H[16]=15
+H[17]=17
+H[18]=13
+
+
+	l_exists = True = 12
+	r_exists = True = 8
+downheaping on 8
+Heap Current Size: 19
+Heap Max Size: 25
+Contents:
+H[0]=2
+H[1]=4
+H[2]=3
+H[3]=8
+H[4]=6
+H[5]=10
+H[6]=5
+H[7]=12
+H[8]=16
+H[9]=14
+H[10]=11
+H[11]=19
+H[12]=18
+H[13]=9
+H[14]=7
+H[15]=20
+H[16]=15
+H[17]=17
+H[18]=13
+
+
+	l_exists = True = 17
+	r_exists = True = 13
+downheaping on 18
+Heap Current Size: 19
+Heap Max Size: 25
+Contents:
+H[0]=2
+H[1]=4
+H[2]=3
+H[3]=8
+H[4]=6
+H[5]=10
+H[6]=5
+H[7]=12
+H[8]=13
+H[9]=14
+H[10]=11
+H[11]=19
+H[12]=18
+H[13]=9
+H[14]=7
+H[15]=20
+H[16]=15
+H[17]=17
+H[18]=16
+
+
+ITEM DELTED:
+Heap Current Size: 19
+Heap Max Size: 25
+Contents:
+H[0]=2
+H[1]=4
+H[2]=3
+H[3]=8
+H[4]=6
+H[5]=10
+H[6]=5
+H[7]=12
+H[8]=13
+H[9]=14
+H[10]=11
+H[11]=19
+H[12]=18
+H[13]=9
+H[14]=7
+H[15]=20
+H[16]=15
+H[17]=17
+H[18]=16
+
+
+downheaping on 0
+Heap Current Size: 18
+Heap Max Size: 25
+Contents:
+H[0]=16
+H[1]=4
+H[2]=3
+H[3]=8
+H[4]=6
+H[5]=10
+H[6]=5
+H[7]=12
+H[8]=13
+H[9]=14
+H[10]=11
+H[11]=19
+H[12]=18
+H[13]=9
+H[14]=7
+H[15]=20
+H[16]=15
+H[17]=17
+
+
+	l_exists = True = 4
+	r_exists = True = 3
+downheaping on 2
+Heap Current Size: 18
+Heap Max Size: 25
+Contents:
+H[0]=3
+H[1]=4
+H[2]=16
+H[3]=8
+H[4]=6
+H[5]=10
+H[6]=5
+H[7]=12
+H[8]=13
+H[9]=14
+H[10]=11
+H[11]=19
+H[12]=18
+H[13]=9
+H[14]=7
+H[15]=20
+H[16]=15
+H[17]=17
+
+
+	l_exists = True = 10
+	r_exists = True = 5
+downheaping on 6
+Heap Current Size: 18
+Heap Max Size: 25
+Contents:
+H[0]=3
+H[1]=4
+H[2]=5
+H[3]=8
+H[4]=6
+H[5]=10
+H[6]=16
+H[7]=12
+H[8]=13
+H[9]=14
+H[10]=11
+H[11]=19
+H[12]=18
+H[13]=9
+H[14]=7
+H[15]=20
+H[16]=15
+H[17]=17
+
+
+	l_exists = True = 9
+	r_exists = True = 7
+downheaping on 14
+Heap Current Size: 18
+Heap Max Size: 25
+Contents:
+H[0]=3
+H[1]=4
+H[2]=5
+H[3]=8
+H[4]=6
+H[5]=10
+H[6]=7
+H[7]=12
+H[8]=13
+H[9]=14
+H[10]=11
+H[11]=19
+H[12]=18
+H[13]=9
+H[14]=16
+H[15]=20
+H[16]=15
+H[17]=17
+
+
+ITEM DELTED:
+Heap Current Size: 18
+Heap Max Size: 25
+Contents:
+H[0]=3
+H[1]=4
+H[2]=5
+H[3]=8
+H[4]=6
+H[5]=10
+H[6]=7
+H[7]=12
+H[8]=13
+H[9]=14
+H[10]=11
+H[11]=19
+H[12]=18
+H[13]=9
+H[14]=16
+H[15]=20
+H[16]=15
+H[17]=17
+
+
+downheaping on 0
+Heap Current Size: 17
+Heap Max Size: 25
+Contents:
+H[0]=17
+H[1]=4
+H[2]=5
+H[3]=8
+H[4]=6
+H[5]=10
+H[6]=7
+H[7]=12
+H[8]=13
+H[9]=14
+H[10]=11
+H[11]=19
+H[12]=18
+H[13]=9
+H[14]=16
+H[15]=20
+H[16]=15
+
+
+	l_exists = True = 4
+	r_exists = True = 5
+downheaping on 1
+Heap Current Size: 17
+Heap Max Size: 25
+Contents:
+H[0]=4
+H[1]=17
+H[2]=5
+H[3]=8
+H[4]=6
+H[5]=10
+H[6]=7
+H[7]=12
+H[8]=13
+H[9]=14
+H[10]=11
+H[11]=19
+H[12]=18
+H[13]=9
+H[14]=16
+H[15]=20
+H[16]=15
+
+
+	l_exists = True = 8
+	r_exists = True = 6
+downheaping on 4
+Heap Current Size: 17
+Heap Max Size: 25
+Contents:
+H[0]=4
+H[1]=6
+H[2]=5
+H[3]=8
+H[4]=17
+H[5]=10
+H[6]=7
+H[7]=12
+H[8]=13
+H[9]=14
+H[10]=11
+H[11]=19
+H[12]=18
+H[13]=9
+H[14]=16
+H[15]=20
+H[16]=15
+
+
+	l_exists = True = 14
+	r_exists = True = 11
+downheaping on 10
+Heap Current Size: 17
+Heap Max Size: 25
+Contents:
+H[0]=4
+H[1]=6
+H[2]=5
+H[3]=8
+H[4]=11
+H[5]=10
+H[6]=7
+H[7]=12
+H[8]=13
+H[9]=14
+H[10]=17
+H[11]=19
+H[12]=18
+H[13]=9
+H[14]=16
+H[15]=20
+H[16]=15
+
+
+	l_exists = False 
+	r_exists = False 
+ITEM DELTED:
+Heap Current Size: 17
+Heap Max Size: 25
+Contents:
+H[0]=4
+H[1]=6
+H[2]=5
+H[3]=8
+H[4]=11
+H[5]=10
+H[6]=7
+H[7]=12
+H[8]=13
+H[9]=14
+H[10]=17
+H[11]=19
+H[12]=18
+H[13]=9
+H[14]=16
+H[15]=20
+H[16]=15
+
+
+downheaping on 0
+Heap Current Size: 16
+Heap Max Size: 25
+Contents:
+H[0]=15
+H[1]=6
+H[2]=5
+H[3]=8
+H[4]=11
+H[5]=10
+H[6]=7
+H[7]=12
+H[8]=13
+H[9]=14
+H[10]=17
+H[11]=19
+H[12]=18
+H[13]=9
+H[14]=16
+H[15]=20
+
+
+	l_exists = True = 6
+	r_exists = True = 5
+downheaping on 2
+Heap Current Size: 16
+Heap Max Size: 25
+Contents:
+H[0]=5
+H[1]=6
+H[2]=15
+H[3]=8
+H[4]=11
+H[5]=10
+H[6]=7
+H[7]=12
+H[8]=13
+H[9]=14
+H[10]=17
+H[11]=19
+H[12]=18
+H[13]=9
+H[14]=16
+H[15]=20
+
+
+	l_exists = True = 10
+	r_exists = True = 7
+downheaping on 6
+Heap Current Size: 16
+Heap Max Size: 25
+Contents:
+H[0]=5
+H[1]=6
+H[2]=7
+H[3]=8
+H[4]=11
+H[5]=10
+H[6]=15
+H[7]=12
+H[8]=13
+H[9]=14
+H[10]=17
+H[11]=19
+H[12]=18
+H[13]=9
+H[14]=16
+H[15]=20
+
+
+	l_exists = True = 9
+	r_exists = True = 16
+downheaping on 13
+Heap Current Size: 16
+Heap Max Size: 25
+Contents:
+H[0]=5
+H[1]=6
+H[2]=7
+H[3]=8
+H[4]=11
+H[5]=10
+H[6]=9
+H[7]=12
+H[8]=13
+H[9]=14
+H[10]=17
+H[11]=19
+H[12]=18
+H[13]=15
+H[14]=16
+H[15]=20
+
+
+ITEM DELTED:
+Heap Current Size: 16
+Heap Max Size: 25
+Contents:
+H[0]=5
+H[1]=6
+H[2]=7
+H[3]=8
+H[4]=11
+H[5]=10
+H[6]=9
+H[7]=12
+H[8]=13
+H[9]=14
+H[10]=17
+H[11]=19
+H[12]=18
+H[13]=15
+H[14]=16
+H[15]=20
+
+
+downheaping on 0
+Heap Current Size: 15
+Heap Max Size: 25
+Contents:
+H[0]=20
+H[1]=6
+H[2]=7
+H[3]=8
+H[4]=11
+H[5]=10
+H[6]=9
+H[7]=12
+H[8]=13
+H[9]=14
+H[10]=17
+H[11]=19
+H[12]=18
+H[13]=15
+H[14]=16
+
+
+	l_exists = True = 6
+	r_exists = True = 7
+downheaping on 1
+Heap Current Size: 15
+Heap Max Size: 25
+Contents:
+H[0]=6
+H[1]=20
+H[2]=7
+H[3]=8
+H[4]=11
+H[5]=10
+H[6]=9
+H[7]=12
+H[8]=13
+H[9]=14
+H[10]=17
+H[11]=19
+H[12]=18
+H[13]=15
+H[14]=16
+
+
+	l_exists = True = 8
+	r_exists = True = 11
+downheaping on 3
+Heap Current Size: 15
+Heap Max Size: 25
+Contents:
+H[0]=6
+H[1]=8
+H[2]=7
+H[3]=20
+H[4]=11
+H[5]=10
+H[6]=9
+H[7]=12
+H[8]=13
+H[9]=14
+H[10]=17
+H[11]=19
+H[12]=18
+H[13]=15
+H[14]=16
+
+
+	l_exists = True = 12
+	r_exists = True = 13
+downheaping on 7
+Heap Current Size: 15
+Heap Max Size: 25
+Contents:
+H[0]=6
+H[1]=8
+H[2]=7
+H[3]=12
+H[4]=11
+H[5]=10
+H[6]=9
+H[7]=20
+H[8]=13
+H[9]=14
+H[10]=17
+H[11]=19
+H[12]=18
+H[13]=15
+H[14]=16
+
+
+	l_exists = False 
+	r_exists = False 
+ITEM DELTED:
+Heap Current Size: 15
+Heap Max Size: 25
+Contents:
+H[0]=6
+H[1]=8
+H[2]=7
+H[3]=12
+H[4]=11
+H[5]=10
+H[6]=9
+H[7]=20
+H[8]=13
+H[9]=14
+H[10]=17
+H[11]=19
+H[12]=18
+H[13]=15
+H[14]=16
+
+
+downheaping on 0
+Heap Current Size: 14
+Heap Max Size: 25
+Contents:
+H[0]=16
+H[1]=8
+H[2]=7
+H[3]=12
+H[4]=11
+H[5]=10
+H[6]=9
+H[7]=20
+H[8]=13
+H[9]=14
+H[10]=17
+H[11]=19
+H[12]=18
+H[13]=15
+
+
+	l_exists = True = 8
+	r_exists = True = 7
+downheaping on 2
+Heap Current Size: 14
+Heap Max Size: 25
+Contents:
+H[0]=7
+H[1]=8
+H[2]=16
+H[3]=12
+H[4]=11
+H[5]=10
+H[6]=9
+H[7]=20
+H[8]=13
+H[9]=14
+H[10]=17
+H[11]=19
+H[12]=18
+H[13]=15
+
+
+	l_exists = True = 10
+	r_exists = True = 9
+downheaping on 6
+Heap Current Size: 14
+Heap Max Size: 25
+Contents:
+H[0]=7
+H[1]=8
+H[2]=9
+H[3]=12
+H[4]=11
+H[5]=10
+H[6]=16
+H[7]=20
+H[8]=13
+H[9]=14
+H[10]=17
+H[11]=19
+H[12]=18
+H[13]=15
+
+
+	l_exists = True = 15
+	r_exists = False 
+downheaping on 13
+Heap Current Size: 14
+Heap Max Size: 25
+Contents:
+H[0]=7
+H[1]=8
+H[2]=9
+H[3]=12
+H[4]=11
+H[5]=10
+H[6]=15
+H[7]=20
+H[8]=13
+H[9]=14
+H[10]=17
+H[11]=19
+H[12]=18
+H[13]=16
+
+
+ITEM DELTED:
+Heap Current Size: 14
+Heap Max Size: 25
+Contents:
+H[0]=7
+H[1]=8
+H[2]=9
+H[3]=12
+H[4]=11
+H[5]=10
+H[6]=15
+H[7]=20
+H[8]=13
+H[9]=14
+H[10]=17
+H[11]=19
+H[12]=18
+H[13]=16
+
+
+downheaping on 0
+Heap Current Size: 13
+Heap Max Size: 25
+Contents:
+H[0]=16
+H[1]=8
+H[2]=9
+H[3]=12
+H[4]=11
+H[5]=10
+H[6]=15
+H[7]=20
+H[8]=13
+H[9]=14
+H[10]=17
+H[11]=19
+H[12]=18
+
+
+	l_exists = True = 8
+	r_exists = True = 9
+downheaping on 1
+Heap Current Size: 13
+Heap Max Size: 25
+Contents:
+H[0]=8
+H[1]=16
+H[2]=9
+H[3]=12
+H[4]=11
+H[5]=10
+H[6]=15
+H[7]=20
+H[8]=13
+H[9]=14
+H[10]=17
+H[11]=19
+H[12]=18
+
+
+	l_exists = True = 12
+	r_exists = True = 11
+downheaping on 4
+Heap Current Size: 13
+Heap Max Size: 25
+Contents:
+H[0]=8
+H[1]=11
+H[2]=9
+H[3]=12
+H[4]=16
+H[5]=10
+H[6]=15
+H[7]=20
+H[8]=13
+H[9]=14
+H[10]=17
+H[11]=19
+H[12]=18
+
+
+	l_exists = True = 14
+	r_exists = True = 17
+downheaping on 9
+Heap Current Size: 13
+Heap Max Size: 25
+Contents:
+H[0]=8
+H[1]=11
+H[2]=9
+H[3]=12
+H[4]=14
+H[5]=10
+H[6]=15
+H[7]=20
+H[8]=13
+H[9]=16
+H[10]=17
+H[11]=19
+H[12]=18
+
+
+	l_exists = False 
+	r_exists = False 
+ITEM DELTED:
+Heap Current Size: 13
+Heap Max Size: 25
+Contents:
+H[0]=8
+H[1]=11
+H[2]=9
+H[3]=12
+H[4]=14
+H[5]=10
+H[6]=15
+H[7]=20
+H[8]=13
+H[9]=16
+H[10]=17
+H[11]=19
+H[12]=18
+
+
+downheaping on 0
+Heap Current Size: 12
+Heap Max Size: 25
+Contents:
+H[0]=18
+H[1]=11
+H[2]=9
+H[3]=12
+H[4]=14
+H[5]=10
+H[6]=15
+H[7]=20
+H[8]=13
+H[9]=16
+H[10]=17
+H[11]=19
+
+
+	l_exists = True = 11
+	r_exists = True = 9
+downheaping on 2
+Heap Current Size: 12
+Heap Max Size: 25
+Contents:
+H[0]=9
+H[1]=11
+H[2]=18
+H[3]=12
+H[4]=14
+H[5]=10
+H[6]=15
+H[7]=20
+H[8]=13
+H[9]=16
+H[10]=17
+H[11]=19
+
+
+	l_exists = True = 10
+	r_exists = True = 15
+downheaping on 5
+Heap Current Size: 12
+Heap Max Size: 25
+Contents:
+H[0]=9
+H[1]=11
+H[2]=10
+H[3]=12
+H[4]=14
+H[5]=18
+H[6]=15
+H[7]=20
+H[8]=13
+H[9]=16
+H[10]=17
+H[11]=19
+
+
+	l_exists = True = 19
+	r_exists = False 
+ITEM DELTED:
+Heap Current Size: 12
+Heap Max Size: 25
+Contents:
+H[0]=9
+H[1]=11
+H[2]=10
+H[3]=12
+H[4]=14
+H[5]=18
+H[6]=15
+H[7]=20
+H[8]=13
+H[9]=16
+H[10]=17
+H[11]=19
+
+
+downheaping on 0
+Heap Current Size: 11
+Heap Max Size: 25
+Contents:
+H[0]=19
+H[1]=11
+H[2]=10
+H[3]=12
+H[4]=14
+H[5]=18
+H[6]=15
+H[7]=20
+H[8]=13
+H[9]=16
+H[10]=17
+
+
+	l_exists = True = 11
+	r_exists = True = 10
+downheaping on 2
+Heap Current Size: 11
+Heap Max Size: 25
+Contents:
+H[0]=10
+H[1]=11
+H[2]=19
+H[3]=12
+H[4]=14
+H[5]=18
+H[6]=15
+H[7]=20
+H[8]=13
+H[9]=16
+H[10]=17
+
+
+	l_exists = True = 18
+	r_exists = True = 15
+downheaping on 6
+Heap Current Size: 11
+Heap Max Size: 25
+Contents:
+H[0]=10
+H[1]=11
+H[2]=15
+H[3]=12
+H[4]=14
+H[5]=18
+H[6]=19
+H[7]=20
+H[8]=13
+H[9]=16
+H[10]=17
+
+
+	l_exists = False 
+	r_exists = False 
+ITEM DELTED:
+Heap Current Size: 11
+Heap Max Size: 25
+Contents:
+H[0]=10
+H[1]=11
+H[2]=15
+H[3]=12
+H[4]=14
+H[5]=18
+H[6]=19
+H[7]=20
+H[8]=13
+H[9]=16
+H[10]=17
+
+
+downheaping on 0
+Heap Current Size: 10
+Heap Max Size: 25
+Contents:
+H[0]=17
+H[1]=11
+H[2]=15
+H[3]=12
+H[4]=14
+H[5]=18
+H[6]=19
+H[7]=20
+H[8]=13
+H[9]=16
+
+
+	l_exists = True = 11
+	r_exists = True = 15
+downheaping on 1
+Heap Current Size: 10
+Heap Max Size: 25
+Contents:
+H[0]=11
+H[1]=17
+H[2]=15
+H[3]=12
+H[4]=14
+H[5]=18
+H[6]=19
+H[7]=20
+H[8]=13
+H[9]=16
+
+
+	l_exists = True = 12
+	r_exists = True = 14
+downheaping on 3
+Heap Current Size: 10
+Heap Max Size: 25
+Contents:
+H[0]=11
+H[1]=12
+H[2]=15
+H[3]=17
+H[4]=14
+H[5]=18
+H[6]=19
+H[7]=20
+H[8]=13
+H[9]=16
+
+
+	l_exists = True = 20
+	r_exists = True = 13
+downheaping on 8
+Heap Current Size: 10
+Heap Max Size: 25
+Contents:
+H[0]=11
+H[1]=12
+H[2]=15
+H[3]=13
+H[4]=14
+H[5]=18
+H[6]=19
+H[7]=20
+H[8]=17
+H[9]=16
+
+
+	l_exists = False 
+	r_exists = False 
+ITEM DELTED:
+Heap Current Size: 10
+Heap Max Size: 25
+Contents:
+H[0]=11
+H[1]=12
+H[2]=15
+H[3]=13
+H[4]=14
+H[5]=18
+H[6]=19
+H[7]=20
+H[8]=17
+H[9]=16
+
+
+downheaping on 0
+Heap Current Size: 9
+Heap Max Size: 25
+Contents:
+H[0]=16
+H[1]=12
+H[2]=15
+H[3]=13
+H[4]=14
+H[5]=18
+H[6]=19
+H[7]=20
+H[8]=17
+
+
+	l_exists = True = 12
+	r_exists = True = 15
+downheaping on 1
+Heap Current Size: 9
+Heap Max Size: 25
+Contents:
+H[0]=12
+H[1]=16
+H[2]=15
+H[3]=13
+H[4]=14
+H[5]=18
+H[6]=19
+H[7]=20
+H[8]=17
+
+
+	l_exists = True = 13
+	r_exists = True = 14
+downheaping on 3
+Heap Current Size: 9
+Heap Max Size: 25
+Contents:
+H[0]=12
+H[1]=13
+H[2]=15
+H[3]=16
+H[4]=14
+H[5]=18
+H[6]=19
+H[7]=20
+H[8]=17
+
+
+	l_exists = True = 20
+	r_exists = True = 17
+downheaping on 8
+Heap Current Size: 9
+Heap Max Size: 25
+Contents:
+H[0]=12
+H[1]=13
+H[2]=15
+H[3]=17
+H[4]=14
+H[5]=18
+H[6]=19
+H[7]=20
+H[8]=16
+
+
+	l_exists = False 
+	r_exists = False 
+ITEM DELTED:
+Heap Current Size: 9
+Heap Max Size: 25
+Contents:
+H[0]=12
+H[1]=13
+H[2]=15
+H[3]=17
+H[4]=14
+H[5]=18
+H[6]=19
+H[7]=20
+H[8]=16
+
+
+downheaping on 0
+Heap Current Size: 8
+Heap Max Size: 25
+Contents:
+H[0]=16
+H[1]=13
+H[2]=15
+H[3]=17
+H[4]=14
+H[5]=18
+H[6]=19
+H[7]=20
+
+
+	l_exists = True = 13
+	r_exists = True = 15
+downheaping on 1
+Heap Current Size: 8
+Heap Max Size: 25
+Contents:
+H[0]=13
+H[1]=16
+H[2]=15
+H[3]=17
+H[4]=14
+H[5]=18
+H[6]=19
+H[7]=20
+
+
+	l_exists = True = 17
+	r_exists = True = 14
+downheaping on 4
+Heap Current Size: 8
+Heap Max Size: 25
+Contents:
+H[0]=13
+H[1]=14
+H[2]=15
+H[3]=17
+H[4]=16
+H[5]=18
+H[6]=19
+H[7]=20
+
+
+	l_exists = False 
+	r_exists = False 
+ITEM DELTED:
+Heap Current Size: 8
+Heap Max Size: 25
+Contents:
+H[0]=13
+H[1]=14
+H[2]=15
+H[3]=17
+H[4]=16
+H[5]=18
+H[6]=19
+H[7]=20
+
+
+downheaping on 0
+Heap Current Size: 7
+Heap Max Size: 25
+Contents:
+H[0]=20
+H[1]=14
+H[2]=15
+H[3]=17
+H[4]=16
+H[5]=18
+H[6]=19
+
+
+	l_exists = True = 14
+	r_exists = True = 15
+downheaping on 1
+Heap Current Size: 7
+Heap Max Size: 25
+Contents:
+H[0]=14
+H[1]=20
+H[2]=15
+H[3]=17
+H[4]=16
+H[5]=18
+H[6]=19
+
+
+	l_exists = True = 17
+	r_exists = True = 16
+downheaping on 4
+Heap Current Size: 7
+Heap Max Size: 25
+Contents:
+H[0]=14
+H[1]=16
+H[2]=15
+H[3]=17
+H[4]=20
+H[5]=18
+H[6]=19
+
+
+	l_exists = False 
+	r_exists = False 
+ITEM DELTED:
+Heap Current Size: 7
+Heap Max Size: 25
+Contents:
+H[0]=14
+H[1]=16
+H[2]=15
+H[3]=17
+H[4]=20
+H[5]=18
+H[6]=19
+
+
+downheaping on 0
+Heap Current Size: 6
+Heap Max Size: 25
+Contents:
+H[0]=19
+H[1]=16
+H[2]=15
+H[3]=17
+H[4]=20
+H[5]=18
+
+
+	l_exists = True = 16
+	r_exists = True = 15
+downheaping on 2
+Heap Current Size: 6
+Heap Max Size: 25
+Contents:
+H[0]=15
+H[1]=16
+H[2]=19
+H[3]=17
+H[4]=20
+H[5]=18
+
+
+	l_exists = True = 18
+	r_exists = False 
+downheaping on 5
+Heap Current Size: 6
+Heap Max Size: 25
+Contents:
+H[0]=15
+H[1]=16
+H[2]=18
+H[3]=17
+H[4]=20
+H[5]=19
+
+
+	l_exists = False 
+	r_exists = False 
+ITEM DELTED:
+Heap Current Size: 6
+Heap Max Size: 25
+Contents:
+H[0]=15
+H[1]=16
+H[2]=18
+H[3]=17
+H[4]=20
+H[5]=19
+
+
+downheaping on 0
+Heap Current Size: 5
+Heap Max Size: 25
+Contents:
+H[0]=19
+H[1]=16
+H[2]=18
+H[3]=17
+H[4]=20
+
+
+	l_exists = True = 16
+	r_exists = True = 18
+downheaping on 1
+Heap Current Size: 5
+Heap Max Size: 25
+Contents:
+H[0]=16
+H[1]=19
+H[2]=18
+H[3]=17
+H[4]=20
+
+
+	l_exists = True = 17
+	r_exists = True = 20
+downheaping on 3
+Heap Current Size: 5
+Heap Max Size: 25
+Contents:
+H[0]=16
+H[1]=17
+H[2]=18
+H[3]=19
+H[4]=20
+
+
+	l_exists = False 
+	r_exists = False 
+ITEM DELTED:
+Heap Current Size: 5
+Heap Max Size: 25
+Contents:
+H[0]=16
+H[1]=17
+H[2]=18
+H[3]=19
+H[4]=20
+
+
+downheaping on 0
+Heap Current Size: 4
+Heap Max Size: 25
+Contents:
+H[0]=20
+H[1]=17
+H[2]=18
+H[3]=19
+
+
+	l_exists = True = 17
+	r_exists = True = 18
+downheaping on 1
+Heap Current Size: 4
+Heap Max Size: 25
+Contents:
+H[0]=17
+H[1]=20
+H[2]=18
+H[3]=19
+
+
+	l_exists = True = 19
+	r_exists = False 
+downheaping on 3
+Heap Current Size: 4
+Heap Max Size: 25
+Contents:
+H[0]=17
+H[1]=19
+H[2]=18
+H[3]=20
+
+
+	l_exists = False 
+	r_exists = False 
+ITEM DELTED:
+Heap Current Size: 4
+Heap Max Size: 25
+Contents:
+H[0]=17
+H[1]=19
+H[2]=18
+H[3]=20
+
+
+downheaping on 0
+Heap Current Size: 3
+Heap Max Size: 25
+Contents:
+H[0]=20
+H[1]=19
+H[2]=18
+
+
+	l_exists = True = 19
+	r_exists = True = 18
+downheaping on 2
+Heap Current Size: 3
+Heap Max Size: 25
+Contents:
+H[0]=18
+H[1]=19
+H[2]=20
+
+
+	l_exists = False 
+	r_exists = False 
+ITEM DELTED:
+Heap Current Size: 3
+Heap Max Size: 25
+Contents:
+H[0]=18
+H[1]=19
+H[2]=20
+
+
+downheaping on 0
+Heap Current Size: 2
+Heap Max Size: 25
+Contents:
+H[0]=20
+H[1]=19
+
+
+	l_exists = True = 19
+	r_exists = False 
+downheaping on 1
+Heap Current Size: 2
+Heap Max Size: 25
+Contents:
+H[0]=19
+H[1]=20
+
+
+	l_exists = False 
+	r_exists = False 
+ITEM DELTED:
+Heap Current Size: 2
+Heap Max Size: 25
+Contents:
+H[0]=19
+H[1]=20
+
+
+downheaping on 0
+Heap Current Size: 1
+Heap Max Size: 25
+Contents:
+H[0]=20
+
+
+	l_exists = False 
+	r_exists = False 
+ITEM DELTED:
+Heap Current Size: 1
+Heap Max Size: 25
+Contents:
+H[0]=20
+
+
+downheaping on 0
+Heap Current Size: 0
+Heap Max Size: 25
+Contents:
+
+
+	l_exists = False 
+	r_exists = False 
+ITEM DELTED:
+Heap Current Size: 0
+Heap Max Size: 25
+Contents:
+
+
