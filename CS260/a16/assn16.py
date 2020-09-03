@@ -43,7 +43,7 @@ if __name__ == "__main__":
         nodes = int(f.readline().strip()[0])
         # love me some concise adjacency matrix initialization
         matrix = [[(0 if a == b else float("inf")) for a in range(nodes)] for b in range(nodes)]
-        while ("" != (edge := f.readline())):
+        while ((edge := f.readline()) != ""):
             edge = edge.split()
             matrix[int(edge[0])][int(edge[1])] = float(edge[2])
         display(matrix)
@@ -71,6 +71,6 @@ if __name__ == "__main__":
             print(menu)
         else:
             if ((start := int(argv[1])) >= nodes):
-                print("\tNot a valid start node - must be a number less that", nodes)
+                print("\tNot a valid start node - must be a number less than", nodes)
             else:
                 dijkstra(matrix, start)

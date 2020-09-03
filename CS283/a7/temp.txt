@@ -1,0 +1,11 @@
+./netchat username 
+(test usernames len>15 later)
+
+call to socket
+call to bind
+call to connect (gethostbyname(), nslookup tux2.cs.drexel.edu)
+have a child thread listen for messages from the server
+send()
+call to shutdown
+
+should be on a thread??

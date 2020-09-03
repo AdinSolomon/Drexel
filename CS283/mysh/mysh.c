@@ -201,7 +201,7 @@ execute(struct command commands[Ncommands])
 					break;
 				// no other builtins right now
 			}
-			continue; // onto the next command
+			continue; // on to the next command
 		}
 		// not a builtin command - proceediing with regularly scheduled programming
 		// pipe
