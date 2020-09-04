@@ -13,17 +13,32 @@ def kruskal(matrix):
         for j in range(len(matrix)):
             if i != j and matrix[i][j] != float("inf"):
                 heappush(H, (matrix[i][j], min([i,j]), max([i,j])))
+    # make the MST
     edges = []
     MSTs = [[i] for i in range(len(matrix))]
-    
-
-
+    while len(H) > 0:
+        edge = heappop(H)
+        if not (True in [(edge[1] in MSTs[i] and edge[2] in MSTs[i]) for i in range(len(MSTs))]):
+            print("\tSelected edge: [" + str(edge[1]) + ", " + str(edge[2]) + ", " + str(edge[0]) + "]")
+            edges.append(edge)
+            # merge the two MSTs containing the nodes in the edge
+            # sorry this is kinda gross
+            done = False
+            for i in range(len(MSTs)):
+                if done:
+                    break
+                for j in range(len(MSTs)):
+                    if edge[1] in MSTs[i] and edge[2] in MSTs[j]:
+                        MSTs[i].extend(MSTs[j])
+                        MSTs.pop(j)
+                        done = True
+                        break
+                        
 def prim(matrix, start):
     edges = []
     nodes = [start]
     print("\tStarting Node:", start)
     while len(nodes) < len(matrix):
-        # find the smallest edge that connects a node in nodes to a node not in nodes
         e = ["bigger", "than", float("inf")]
         [[(e := ([min([n, i]), max([n, i]), matrix[n][i]] if (i not in nodes and matrix[n][i] < e[2]) else e)) for i in range(len(matrix))] for n in nodes]
         edges.append(e)
@@ -43,7 +58,7 @@ if __name__ == "__main__":
             edge = edge.split()
             matrix[int(edge[0])][int(edge[1])] = float(edge[2])
             matrix[int(edge[1])][int(edge[0])] = float(edge[2]) # undirected graph
-        display(matrix)
+    display(matrix)
     print()
     # start the cmdline interface
     menu = "Commands are:\n" + \
@@ -65,9 +80,11 @@ if __name__ == "__main__":
             print(menu)
             continue
         if argv[0] == "kruskal":
+            print("\tRunning Kruskal's Algorithm")
             kruskal(matrix)
         if argv[0] == "prim":
             if len(argv) < 2 or ((start := int(argv[1])) >= nodes):
                 print("\tPlease include the integer argument less than", nodes)
             else:
+                print("\tRunning Prim's Algorithm")
                 prim(matrix, start)
