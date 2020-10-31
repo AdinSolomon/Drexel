@@ -17,7 +17,7 @@ DEFAULT_STATE = "12345" + \
 
 class State:
     def __init__(self, str = DEFAULT_STATE):
-        self.data = str.split("|")
+        self.data = str.split(DEFAULT_SEPARATOR)
     def __str__(self):
         return DEFAULT_SEPARATOR.join(self.data)
     def __eq__(self, other):

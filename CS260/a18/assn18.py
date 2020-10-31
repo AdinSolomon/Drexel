@@ -15,8 +15,7 @@ def kruskal(matrix):
                 heappush(H, (matrix[i][j], min([i,j]), max([i,j])))
     edges = []
     MSTs = [[i] for i in range(len(matrix))]
-    
-
+    print(MSTs)
 
 def prim(matrix, start):
     edges = []

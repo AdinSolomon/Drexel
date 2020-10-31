@@ -1,0 +1,147 @@
+# abs358@drexel.edu
+
+import random
+import heapq
+import util
+
+class Node:
+    def __init__(self, parent, state):
+        self.parent = parent
+        self.state = state
+    def __str__(self):
+        return self.state.__str__()
+    def depth(self):
+        node = self
+        depth = -1
+        while node != None:
+            depth += 1
+            node = node.parent
+        return depth
+    def path_to(self):
+        node = self
+        path = []
+        while node != None:
+            path.append(node.state)
+            node = node.parent
+        path.reverse()
+        return path
+
+class Agent:
+
+    def node_depth(self, node):
+        return 0 if node == None else node.depth()
+
+    def random_walk(self, state, n=8):
+        node = Node(parent=None, state=state)
+        for i in range(n-1):
+            actions = node.state.actions()
+            temp_s = node.state.clone().execute(actions[random.randint(0, len(actions)-1)])
+            temp_n = Node(parent=node, state=temp_s)
+            node = temp_n
+        states_visited = []
+        while node != None:
+            states_visited.append(node.state)
+            node = node.parent
+        states_visited.reverse()
+        return states_visited
+    
+    def _search(self, state, func):
+        print("Starting at state =", state)
+        this_node = Node(parent=None, state=state)
+        this_score = func(this_node)
+        nodes_found = 1000000 # this is a tie-breaker for scoring and is decremented
+        this_struct = [this_score, nodes_found, this_node]
+        open_nodes = [this_struct] # this holds structs
+        heapq.heapify(open_nodes) # it's also a heap
+        closed_nodes = [] # this is a regular list and will also hold structs
+        iterations = 0
+        while len(open_nodes) > 0:
+            iterations += 1
+            this_struct = heapq.heappop(open_nodes)
+            this_score = this_struct[0]
+            this_node = this_struct[2]
+            #print("This struct (score) =", this_struct[0])
+            #print("This struct (tie_breaker) =", 1000000 - this_struct[1])
+            #print("This struct (Node) =", this_struct[2])
+            if this_node.state.is_goal():
+                break
+            #print("    not at goal...")
+            #util.pprint(this_node.path_to())
+            this_actions = this_node.state.actions()
+            this_next_states = [this_node.state.clone().execute(action) for action in this_actions]
+            for next_state in this_next_states:
+                #print("    next state =", next_state)
+                state_in_open = False
+                for open_struct in open_nodes:
+                    open_node = open_struct[2]
+                    if open_node.state == next_state:
+                        #print("\tnext state is in open_nodes")
+                        this_node_depth = self.node_depth(this_node)
+                        open_node_parent_depth = self.node_depth(open_node.parent)
+                        if this_node_depth < open_node_parent_depth: # lower score is better bc of heap
+                            #print("\toverriding the parent")
+                            open_node.parent = this_node
+                            open_struct[0] = func(open_node)
+                            heapq.heapify(open_nodes) # node's score changed -> re-heapify
+                        state_in_open = True
+                        break
+                if state_in_open:
+                    continue
+                state_in_closed = False
+                for closed_struct in closed_nodes:
+                    closed_node = closed_struct[2]
+                    if closed_node.state == next_state:
+                        #print("\tnext state is in closed_nodes")
+                        this_node_depth = self.node_depth(this_node)
+                        closed_node_parent_depth = self.node_depth(closed_node.parent)
+                        if this_node_depth < closed_node_parent_depth: # lower score is better bc of heap
+                            #print("\toverriding the parent")
+                            closed_node.parent = this_node
+                            closed_struct[0] = func(closed_node)
+                            # re-evaluate all descendants
+                            changed_parent = this_node
+                            while changed_parent != None:
+                                for _open_struct in open_nodes:
+                                    if _open_struct[2].parent == changed_parent:
+                                        _open_struct[0] = func(_open_struct[2])
+                                        changed_parent = _open_struct[2]
+                                        break
+                                for _closed_struct in closed_nodes:
+                                    if _closed_struct[2].parent == changed_parent:
+                                        _closed_struct[0] = func(_closed_struct[2])
+                                        changed_parent = _closed_struct[2]
+                                        break
+                            heapq.heapify(closed_nodes) # re-heapify bc of changes
+                        state_in_closed = True
+                        break
+                if state_in_closed:
+                    continue
+                if not state_in_closed and not state_in_open:
+                    #print("\tnext state is new! adding to open_nodes")
+                    nodes_found -= 1 # this is so that the heap takes the correct next node (at least in dfs), but decrementing isn't necessary
+                    new_node = Node(parent=this_node, state=next_state)
+                    new_struct = [func(new_node), nodes_found, new_node]
+                    heapq.heappush(open_nodes, new_struct)
+            # done expanding this_node
+            closed_nodes.append(this_struct)
+            #print("Done expanding this_node...\n")
+        # struct, node, etc. now store the goal state
+        print("Done exploring! Took", iterations, "iterations. Preparing path:")
+        path = this_node.path_to()
+        #util.pprint(path)
+        #print("Path length =", len(path))
+        return path
+
+    def bfs_func(self, node): # lower score is better bc of heap
+        return self.node_depth(node)
+    def bfs(self, state):
+        return self._search(state, self.bfs_func)
+    
+    def dfs_func(self, node): # lower score is better bc of heap
+        return -1 * self.node_depth(node)
+    def dfs(self, state):
+        return self._search(state, self.dfs_func)
+
+    # a_star_func is passed into a_star and is declared in main
+    def a_star(self, state, heuristic):
+        return self._search(state, heuristic)
