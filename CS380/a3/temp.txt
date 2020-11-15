@@ -1,0 +1,52 @@
+def choose_action(self, state: State = None) -> Action:
+        if MINIMAX_LOOKAHEAD == 0:
+            print("\tChoosing a random action")
+            return random.choice(state.actions(self.character))
+        score = -1 * float("inf")
+        actions = state.actions(self.character)
+        action = None
+        for a in actions:
+            print("action =", action, "| score =", score)
+            print("Considering action:", a)
+            s = self.minimax(state=state, action=a)
+            if s > score:
+                print(a, "is better with score", s)
+                action = a
+                score = s
+        print("Chose action", action, "from among", len(actions), "actions")
+        if action == None:
+            print("\tChoosing a random action instead")
+            return random.choice(actions)
+        return action
+
+    def minimax(self, state: State, action: Action, min: bool = True, depth: int = MINIMAX_LOOKAHEAD, func = heuristic1):
+        state = state.clone()
+        tabs = "    "*(MINIMAX_LOOKAHEAD-depth)
+        print(tabs+"minimax(", action, ", "+("min" if min else "max")+", "+str(depth)+")")
+        if depth == 1: # base case
+            score = func(state.execute(action), self.character)
+            print(tabs+"action score =", score)
+            return score
+        newstate = state.execute(action)
+        if min:
+            newscore = float("inf")
+            opponent_character = "O" if (self.character == "X") else "X"
+            newactions = newstate.actions(opponent_character)
+            newaction = None
+            for na in newactions:
+                ns = self.minimax(newstate, na, min=False, depth=depth-1)
+                if ns < newscore:
+                    newaction = na
+                    newscore = ns
+            print(tabs+"min action =", na)
+            return newscore
+        else: # min=False
+            newscore = -1 * float("inf")
+            newactions = newstate.actions(self.character)
+            newaction = None
+            for na in newactions:
+                ns = self.minimax(newstate, na, min=True,  depth=depth-1)
+                if ns > newscore:
+                    newaction = na
+                    newscore = ns
+            return newscore
